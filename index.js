@@ -9,7 +9,7 @@ if (expoente == 0) {
   resultado = 1;
 } else {
   for (let i = 1; i < expoente; i++) {
-    for (let f = 1; f < base; f++) {
+    for (let j = 1; j < base; j++) {
       resultado = base2 + resultado;
       }
     base2 = resultado;
