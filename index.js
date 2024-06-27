@@ -2,6 +2,17 @@ const prompt = require("prompt-sync")();
 
 let base = Number(prompt("Qual número será elevado: "));
 let expoente = Number(prompt("Digite a potência: "));
-let resultado = 0;
+let resultado = base;
+let base2 = base;
 
-console.log(typeof resultado);
+if (expoente == 0) {
+  resultado = 1;
+} else {
+  for (let i = 1; i < expoente; i++) {
+    for (let f = 1; f < base; f++) {
+      resultado = base2 + resultado;
+      }
+    base2 = resultado;
+  }
+}
+console.log(`${base} elevado a ${expoente} é igual a ${resultado}`);
